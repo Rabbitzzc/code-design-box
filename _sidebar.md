@@ -4,4 +4,6 @@
 * [CSS](css/readme)
   * [居中](css/居中)
 * [JavaScript](javascript/readme)
+  * [Vue](javascript/vue/README)
+    * [吸顶指令](javascript/vue/吸顶指令)
 * [组件](elements)
