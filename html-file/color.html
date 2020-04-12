@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .color-area {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .color {
+            position: relative;
+            width: 24vw;
+            height: 30vh;
+            cursor: pointer;
+            margin: 3px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-area">
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.js"></script>
+    <script>
+        function createHtml() {
+            const html = [
+                '<div class="color">',
+                '<div class="text">',
+                '</div>',
+                '</div>'
+            ].join(' ');
+            $('.color-area').append(html)
+        }
+        const colors = [
+            'dbdbdb',
+            'f0a500',
+            'cf7500',
+            '000000',
+            'f4f4f4',
+            '8ec6c5',
+            '8ec6c5',
+            '8566aa',
+            '202040',
+            '543864',
+            'ff6363',
+            'ffbd69',
+            'efa8e4',
+            'f8e1f4',
+            'fff0f5',
+            '97e5ef',
+            '00bcd4',
+            'b2ebf2',
+            'ff5722',
+            'dd2c00',
+            '363062',
+            '4d4c7d',
+            '827397',
+            'd8b9c3',
+            'ffb6b6',
+            'fde2e2',
+            'aacfcf',
+            '679b9b',
+        ];
+
+
+        colors.forEach(_ => createHtml())
+
+        let shows = document.getElementsByClassName('color')
+        for (let i in colors) {
+            const me = '#' + colors[i]
+            shows[i].style.background = me
+            $(shows[i]).text(me)
+        }
+    </script>
+</body>
+
+</html>
