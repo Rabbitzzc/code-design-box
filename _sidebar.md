@@ -19,6 +19,7 @@
 * [JavaScript](javascript/readme)
   * [Vue](javascript/vue/README)
     * [吸顶指令](javascript/vue/吸顶指令)
+    * [图片预览指令](javascript/vue/图片预览指令)
   * [图片颜色提取](javascript/图片颜色提取.md) 
   * [对象操作方法](javascript/对象操作方法.md)
 * [code](css/风格/code.md)
