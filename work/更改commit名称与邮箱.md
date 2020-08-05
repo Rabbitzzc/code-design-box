@@ -21,3 +21,22 @@ then
 fi
 ' —tag-name-filter cat — —branches —tags
 ```
+
+然后执行
+
+```sh
+chmod +x email.sh
+./email.sh
+```
+
+如果失败了，需要执行
+```sh
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch Rakefile' HEAD
+```
+
+本地修改成功，推送到远端
+```sh
+git push origin --force --all
+git push origin --force --tags
+```
+
