@@ -22,6 +22,7 @@
     * [图片预览指令](javascript/vue/图片预览指令)
   * [图片颜色提取](javascript/图片颜色提取.md) 
   * [对象操作方法](javascript/对象操作方法.md)
+  * [数组洗牌算法](javascript/数组洗牌.md)
 * [code](css/风格/code.md)
   * [JS 整洁编码](code/clean_code_js.md)
 * [组件](elements)
